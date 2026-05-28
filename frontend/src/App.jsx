@@ -29,7 +29,7 @@ function App() {
     try {
 
       const response = await axios.get(
-        "http://127.0.0.1:8000/api/records/"
+        "https://breathe-esg-assignment-7o8w.onrender.com/api/records/"
       );
 
       setRecords(response.data);
@@ -58,7 +58,7 @@ function App() {
     try {
 
       await axios.post(
-        "http://127.0.0.1:8000/api/add/",
+        "https://breathe-esg-assignment-7o8w.onrender.com/api/add/",
         formData
       );
 
@@ -89,7 +89,7 @@ function App() {
     try {
 
       await axios.put(
-        `http://127.0.0.1:8000/api/approve/${id}/`
+        `https://breathe-esg-assignment-7o8w.onrender.com/api/approve/${id}/`
       );
 
       fetchRecords();
@@ -107,7 +107,7 @@ function App() {
     try {
 
       await axios.put(
-        `http://127.0.0.1:8000/api/reject/${id}/`
+        `https://breathe-esg-assignment-7o8w.onrender.com/api/reject/${id}/`
       );
 
       fetchRecords();
@@ -136,7 +136,7 @@ function App() {
     try {
 
       await axios.post(
-        "http://127.0.0.1:8000/api/upload-csv/",
+        "https://breathe-esg-assignment-7o8w.onrender.com/api/upload-csv/",
         uploadData
       );
 
